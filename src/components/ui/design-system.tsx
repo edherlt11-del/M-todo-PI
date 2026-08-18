@@ -59,7 +59,7 @@ export function Button({
   ...props 
 }: ButtonProps) {
   
-  const baseClasses = "inline-flex items-center justify-center font-extrabold tracking-wide rounded-2xl transition-all active:scale-98 cursor-pointer text-center";
+  const baseClasses = "inline-flex items-center justify-center font-extrabold tracking-wide rounded-2xl transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-center select-none";
   
   const sizeClasses = {
     sm: "px-4 py-2 text-xs rounded-xl",
