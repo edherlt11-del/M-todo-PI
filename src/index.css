@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Plus Jakarta Sans", sans-serif;
+  
+  --color-celeste-50: #f0f9ff;
+  --color-celeste-100: #e0f2fe;
+  --color-celeste-500: #0ea5e9;
+  --color-celeste-600: #0284c7;
+
+  --color-verde-50: #ecfdf5;
+  --color-verde-100: #d1fae5;
+  --color-verde-500: #10b981;
+  --color-verde-600: #059669;
+
+  --color-amarillo-400: #fbbf24;
+  --color-amarillo-500: #f59e0b;
+}
+
+/* Custom glow effects and Apple/Stripe-level UI aesthetics */
+.glow-green {
+  box-shadow: 0 10px 40px -10px rgba(16, 185, 129, 0.25);
+}
+
+.glow-amber {
+  box-shadow: 0 10px 40px -10px rgba(245, 158, 11, 0.35);
+}
+
+.glow-red {
+  box-shadow: 0 10px 50px -5px rgba(239, 68, 68, 0.45);
+}
+
+.glow-celeste {
+  box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.25);
+}
+
+.glow-btn {
+  box-shadow: 0 8px 25px -4px rgba(16, 185, 129, 0.45);
+}
+
+.glow-btn:hover {
+  box-shadow: 0 12px 32px -4px rgba(16, 185, 129, 0.6);
+}
+
+.bg-pattern {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+@keyframes gauge-shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  15% { transform: translate(-3px, 2px) rotate(-1deg); }
+  30% { transform: translate(3px, -2px) rotate(1deg); }
+  45% { transform: translate(-3px, -1px) rotate(-0.5deg); }
+  60% { transform: translate(2px, 2px) rotate(0.5deg); }
+  75% { transform: translate(-1px, 1px) rotate(0deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-gauge-vibrate {
+  animation: gauge-shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes pulse-danger {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(239, 68, 68, 0);
+  }
+}
+
+.animate-pulse-danger {
+  animation: pulse-danger 2s infinite;
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fade-slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes type-reveal {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.animate-type-reveal {
+  animation: type-reveal 0.6s ease-out forwards;
+}
+
+

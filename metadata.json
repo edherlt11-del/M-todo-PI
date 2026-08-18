@@ -1,0 +1,8 @@
+{
+  "name": "Remix Pequeño Inversionista 3.0 gamificado",
+  "description": "Haz que tu hijo comprenda cómo funciona el dinero, el ahorro y la inversión en solo 7 días con juegos y actividades prácticas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
